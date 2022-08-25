@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type='module' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js'></script>
+        <script nomodule='' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js'></script>
+    </head>
+  
+    <body>
+    
+        <div class="timeline" id="timeline">
+            <section>
+                <div class="card">
+                    <img src="assets/img/package.svg" class="album">
+                    <div class="status">ORDER STATUS</div>
+                    <div class="orderID">Order ID : 12345678</div>
+                    <div class="orderstatus">Shipped</div>
+                </div>
+                <div class="horizontal_timeline">
+                    <div id = "InProcess">
+                        <ion-icon name="checkmark" class="icon"></ion-icon>
+                        <label class="lable">Processing Order</label>
+                    </div>
+                    <div id = "Shipped">
+                        <ion-icon name="checkmark" class="icon"></ion-icon>
+                        <label class="lable">Order Shipped</label>
+                    </div>
+                    <div id = "Out">
+                        <ion-icon name="checkmark" class="gicon"></ion-icon>
+                        <label class="lable">Out For Delivery</label>
+                    </div>
+                    <div id = "Delivered">
+                        <ion-icon name="checkmark" class="gicon"></ion-icon>
+                        <label class="lable">Order Delivered</label>
+                    </div> 
+                </div>
+
+                <div class="date_timeline">
+                    <div id = "date_time">
+                        <label class="timeline_label">Date - Time</label>
+                    </div>
+                    <div id = "event">
+                        <label class="timeline_label" id="label_event">Event</label>
+                    </div>
+                    <div id = "reception">
+                        <div class="item" style = "grid-column: 1; grid-row:1">
+                            <label>22/08/20,06:07:36</label>
+                        </div>
+                        <div class="bitem" style = "grid-column: 4; grid-row:1">
+                            <h4>Order Picked Up</h4>
+                        </div>
+
+                        <div class="item" style = "grid-column: 1; grid-row:2">
+                            <label>22/08/21,08:15:24</label>
+                        </div>
+                        <div class="bitem" style = "grid-column: 4; grid-row:2">
+                            <h4>Order Shipped</h4>
+                        </div>
+                        <div class="item" style = "grid-column: 1; grid-row:3">
+                            <label>22/08/22,05:34:52</label>
+                        </div>
+                        <div class="bitem" style = "grid-column: 4; grid-row:3">
+                            <h4>Reached At Warehouse LA</h4>
+                        </div>
+                        <div class="item" style = "grid-column: 1; grid-row:4">
+                            <label>22/08/22,09:18:19</label>
+                        </div>
+                        <div class="bitem" style = "grid-column: 4; grid-row:4">
+                            <h4>Departed Warehouse LA</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+        </div>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
